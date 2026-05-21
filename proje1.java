@@ -37,6 +37,24 @@ class Main {
         double total=vate_amount+price;
         System.out.println(total);
 
+                //Suggesting Activities Based on Temperature
+
+        System.out.print("scale");
+        
+        int degree_of_temperature=Scanner.nextInt();
+        String event=" ";
+        if(degree_of_temperature <5)
+            event="skiing";
+        else if(degree_of_temperature<15)
+            event="theatre";
+        else if(degree_of_temperature<25)
+            event="barbecue";
+        else
+            event="swimming";
+
+        System.out.println("\r\n" + //
+                        "recommended activity" +event);
+
 
 
 
